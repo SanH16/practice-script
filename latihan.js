@@ -83,13 +83,45 @@
 // }
 
 // contoh sederhana
-alert("Selamat datang");
+// alert("Selamat datang");
+// let klik = true;
+
+// while (klik === true) {
+//   let nama = prompt("Masukkan nama :");
+//   alert("Hai " + nama);
+
+//   klik = confirm("Coba Lagi ?");
+// }
+// alert("Terima kasih");
+
+// ======= Control Flow =======
+// contoh perulangan for
+// alert("Start");
+// for (let i = 0; i < 3; i++) {
+//   alert("Hello Santech"); //output Santech sebanyak 3x
+// }
+// alert("Done");
+
+// contoh pengkodisian if
+// let angka = prompt("Masukkan angka :");
+
+// if (angka % 2 === 0) {
+//   alert(angka + " Ini adalah bilangan Genap");
+// } else {
+//   alert(angka + " Ini adalah bilangan Ganjil");
+// }
+
+// ======= While =======
 let klik = true;
 
+// contoh if di dalam while
 while (klik === true) {
-  let nama = prompt("Masukkan nama :");
-  alert("Hai " + nama);
-
-  klik = confirm("Coba Lagi ?");
+  let angka = prompt("Masukkan angka :");
+  if (angka % 2 === 0) {
+    alert(angka + " Ini adalah bilangan Genap");
+  } else {
+    alert(angka + " Ini adalah bilangan Ganjil");
+  }
+  klik = confirm("Coba lagi program ?");
 }
 alert("Terima kasih");
