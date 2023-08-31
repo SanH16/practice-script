@@ -49,3 +49,14 @@
 // length
 // let firstName = "Adhitya Hasan";
 // console.log(firstName.length); // 13 karakter | .length start hitung dari angka 1,2,3,4... bukan dari 0,1,2,3...
+
+// contoh boolean
+// var x = 10;
+// console.log(x < 20); //true
+
+// console.log("Adhityasan" == "adhityasan"); //false
+// let x; //undefined
+// let y = "null"; //null
+
+// console.log(x);
+// console.log(y);
