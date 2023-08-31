@@ -112,16 +112,16 @@
 // }
 
 // ======= While =======
-let klik = true;
+// let klik = true;
 
-// contoh if di dalam while
-while (klik === true) {
-  let angka = prompt("Masukkan angka :");
-  if (angka % 2 === 0) {
-    alert(angka + " Ini adalah bilangan Genap");
-  } else {
-    alert(angka + " Ini adalah bilangan Ganjil");
-  }
-  klik = confirm("Coba lagi program ?");
-}
-alert("Terima kasih");
+// // contoh if di dalam while
+// while (klik === true) {
+//   let num = prompt("Input a number :");
+//   if (num % 2 === 0) {
+//     alert(num + " This is an Even number");
+//   } else {
+//     alert(num + " This is an Odd number");
+//   }
+//   klik = confirm("Try again ?");
+// }
+// alert("Thank You");
