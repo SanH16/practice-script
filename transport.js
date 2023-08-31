@@ -51,12 +51,25 @@
 // }
 
 // Case 5 | Kendaraan 8 & 10 Lembur
+// let jumlah = prompt("Input a number of Transport :");
+// let aktif = prompt("Input a number Operation Transport (Active) :");
+// for (let num = 1; num <= jumlah; num++) {
+//   if (num <= aktif) {
+//     console.log("Kendaraan No. " + num + " beroperasi dengan baik.");
+//   } else if (num === 8 || num === 10) {
+//     console.log("Kendaraan No. " + num + " sedang lembur.");
+//   } else {
+//     console.log("Kendaraan No. " + num + " sedang tidak beroperasi.");
+//   }
+// }
+
+// Case 6 | Kendaran 5, 8, 10 Lembur
 let jumlah = prompt("Input a number of Transport :");
 let aktif = prompt("Input a number Operation Transport (Active) :");
 for (let num = 1; num <= jumlah; num++) {
-  if (num <= aktif) {
+  if (num <= aktif && num !== 5) {
     console.log("Kendaraan No. " + num + " beroperasi dengan baik.");
-  } else if (num === 8 || num === 10) {
+  } else if (num === 8 || num === 10 || num === 5) {
     console.log("Kendaraan No. " + num + " sedang lembur.");
   } else {
     console.log("Kendaraan No. " + num + " sedang tidak beroperasi.");
