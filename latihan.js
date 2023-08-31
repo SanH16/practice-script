@@ -111,7 +111,7 @@
 //   alert(angka + " Ini adalah bilangan Ganjil");
 // }
 
-// ======= While =======
+// ======= While  | While didalam If =======
 // contoh if di dalam while
 // let klik = true;
 
@@ -154,4 +154,25 @@
 
 // for (let car = 1; car <= carNumber; car++) {
 //   console.log("This is an number of Transport - (" + car + ")");
+// }
+
+// ======= Pengkondisian IF =======
+// contoh sederhana
+// let num = 5;
+// if (num === 5) {
+//   console.log("An number input is 5");
+// }
+
+// contoh 2
+// let num = 5;
+// if (num < 10) {
+//   console.log(num + " lebih kecil dari 10");
+// }
+
+//contoh 3 | Ganjil Genap
+// let num = prompt("Input a number :");
+// if (num % 2 === 0) {
+//   console.log(num + " This is an Even number");
+// } else {
+//   console.log(num + " This is an Odd number");
 // }
