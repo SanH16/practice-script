@@ -27,8 +27,10 @@
 // }
 
 // Case 3 | For + if
-for (let num = 1; num <= 10; num++) {
-  if (num <= 6) {
+let jumlah = prompt("Input a number of Transport :");
+let aktif = prompt("Input a number Operation Transport (Active) :");
+for (let num = 1; num <= jumlah; num++) {
+  if (num <= aktif) {
     console.log("Kendaraan No. " + num + " beroperasi dengan baik.");
   } else {
     console.log("Kendaraan No. " + num + " sedang tidak beroperasi.");

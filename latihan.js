@@ -118,9 +118,11 @@
 // while (klik) {
 //   let num = prompt("Input a number :");
 //   if (num % 2 === 0) {
-//     alert(num + " This is an Even number");
+//     alert("(" + num + ") This is an Even number");
+//   } else if (num % 2 === 1) {
+//     alert("(" + num + ") This is an Odd number");
 //   } else {
-//     alert(num + " This is an Odd number");
+//     alert("(" + num + ") is not an Number");
 //   }
 //   klik = confirm("Try again ?");
 // }
@@ -172,7 +174,9 @@
 //contoh 3 | Ganjil Genap
 // let num = prompt("Input a number :");
 // if (num % 2 === 0) {
-//   console.log(num + " This is an Even number");
+//   console.log("(" + num + ") This is an Even number");
+// } else if (num % 2 === 1) {
+//   console.log("(" + num + ") This is an Odd number");
 // } else {
-//   console.log(num + " This is an Odd number");
+//   console.log("(" + num + ") is not an Number");
 // }
