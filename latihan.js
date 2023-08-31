@@ -145,13 +145,13 @@
 
 // ======= Perulangan FOR =======
 // contoh sederhana
-for (let num = 1; num <= 10; num++) {
-  console.log("Hey number " + num); //Hey number 1,2,....
-}
+// for (let num = 1; num <= 10; num++) {
+//   console.log("Hey number " + num); //Hey number 1,2,....
+// }
 
-// contoh 2
-let carNumber = prompt("Input a number of Transport : ");
+// // contoh 2
+// let carNumber = prompt("Input a number of Transport : ");
 
-for (let car = 1; car <= carNumber; car++) {
-  console.log("This is an number of Transport - (" + car + ")");
-}
+// for (let car = 1; car <= carNumber; car++) {
+//   console.log("This is an number of Transport - (" + car + ")");
+// }
