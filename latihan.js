@@ -142,3 +142,16 @@
 //   console.log("Hey " + nilai + "x"); //hey 5 kali
 //   nilai++; //nilai = nilai + 1;
 // }
+
+// ======= Perulangan FOR =======
+// contoh sederhana
+for (let num = 1; num <= 10; num++) {
+  console.log("Hey number " + num); //Hey number 1,2,....
+}
+
+// contoh 2
+let carNumber = prompt("Input a number of Transport : ");
+
+for (let car = 1; car <= carNumber; car++) {
+  console.log("This is an number of Transport - (" + car + ")");
+}
