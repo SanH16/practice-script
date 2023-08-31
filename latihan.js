@@ -128,3 +128,17 @@
 
 // atau menggunakan cara ini
 // while (klik === true ) { isi sama dengan diatas} alert("Thanks")
+
+// contoh sederhana
+// let text = true;
+// while (text) {
+//   console.log("Hello SanTech");
+//   text = confirm("Try Again ?");
+// }
+
+// contoh otomasi oleh program
+// let nilai = 1;
+// while (nilai <= 5) {
+//   console.log("Hey " + nilai + "x"); //hey 5 kali
+//   nilai++; //nilai = nilai + 1;
+// }
