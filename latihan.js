@@ -112,10 +112,10 @@
 // }
 
 // ======= While =======
+// contoh if di dalam while
 // let klik = true;
 
-// // contoh if di dalam while
-// while (klik === true) {
+// while (klik) {
 //   let num = prompt("Input a number :");
 //   if (num % 2 === 0) {
 //     alert(num + " This is an Even number");
@@ -125,3 +125,6 @@
 //   klik = confirm("Try again ?");
 // }
 // alert("Thank You");
+
+// atau menggunakan cara ini
+// while (klik === true ) { isi sama dengan diatas} alert("Thanks")
