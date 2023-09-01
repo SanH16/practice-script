@@ -67,3 +67,33 @@
 //   return a * a * a + b * b * b;
 // }
 // alert(jumlahVolumeDuaKubus(8, 3));
+
+// ++++++++++++++++++ Scope ++++++++++++++++++
+
+// contoh function scope 1
+// let a = 5; //global scope
+
+// function tes() {
+//   //di dalam function bisa akses variable dari global
+//   let b = 2;
+//   console.log(b); // benar
+//   console.log(a); // masih benar
+// }
+// tes();
+// // console.log(b); // error karena variable dalam function tidak bisa diakses dari luar (tidak diakses secara global)
+
+// // contoh function scope 2
+// let a = 1;
+// function tes() {
+//   // name conflict
+//   let a = 5; // variable lokal
+// }
+// console.log(a); // a=1 karena yang tampil adalah variable global
+
+// contoh function scope 3
+let a = 1;
+function tes(a) {
+  console.log(a);
+}
+tes(2); // output : 2 | parameter 2 akan masuk ke variable local function tes(a) kemudian menampilkan console dari (a)
+console.log(a); // output : 1 | menampilkan isi dari variable global a = 1
