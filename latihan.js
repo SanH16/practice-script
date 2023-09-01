@@ -166,7 +166,7 @@
 // }
 
 // contoh 2
-// let num = 5;
+// let num = parseInt(prompt("Masukkan angka : "));
 // if (num < 10) {
 //   console.log(num + " lebih kecil dari 10");
 // }
@@ -182,3 +182,70 @@
 // }
 
 // ======= Switch =======
+
+// contoh 1
+// let numb = parseInt(prompt("Masukkan number : "));
+
+// switch (numb) {
+//   case 1:
+//     alert("Anda memasukkan number 1");
+//     break;
+//   case 2:
+//     alert("Anda memasukkan angka 2");
+//     break;
+//   case 3:
+//     alert("Anda memasukkan angka 2");
+//     break;
+//   default:
+//     alert("Anda tidak memasukkan angka");
+//     break;
+// }
+
+// contoh 2 | banyak kasus / output
+// let item = prompt(
+//   "Masukkan makanan / minuman : \n (nasi, daging, susu, fanta, burger, softdrink)"
+// );
+
+// switch (item) {
+//   case "nasi":
+//     alert("Makanan / minuman ini cukup Sehat 😊");
+//     break;
+//   case "daging":
+//     alert("Makanan / minuman ini Sehat 😊");
+//     break;
+//   case "susu":
+//     alert("Makanan / minuman ini Konsumsi tinggi 😊");
+//     break;
+//   case "fanta":
+//     alert("Makanan / minuman ini kurang Sehat 😐");
+//     break;
+//   case "burger":
+//     alert("Makanan / minuman ini kurang Sehat 😐");
+//     break;
+//   case "softdrink":
+//     alert("Makanan / minuman ini kurang Sehat 😐");
+//     break;
+//   default:
+//     alert("Anda memasukkan makanan / minuman yang tidak sesuai.");
+// }
+
+//contoh 3 | 2 output
+let item = prompt(
+  "Masukkan nama Makanan / Minuman \n (cth: nasi, susu, daging, burger, pizza, fanta)"
+);
+
+switch (item) {
+  case "nasi":
+  case "susu":
+  case "daging":
+    alert("Makanan / minuman ini SEHAT 😊");
+    break;
+  case "burger":
+  case "pizza":
+  case "fanta":
+    alert("Makanan / minuman ini TIDAK SEHAT");
+    break;
+  default:
+    alert("Inputan anda SALAH!");
+    break;
+}
