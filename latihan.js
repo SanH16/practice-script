@@ -230,22 +230,43 @@
 // }
 
 //contoh 3 | 2 output
-let item = prompt(
-  "Masukkan nama Makanan / Minuman \n (cth: nasi, susu, daging, burger, pizza, fanta)"
-);
+// let item = prompt(
+//   "Masukkan nama Makanan / Minuman \n (cth: nasi, susu, daging, burger, pizza, fanta)"
+// );
 
-switch (item) {
-  case "nasi":
-  case "susu":
-  case "daging":
-    alert("Makanan / minuman ini SEHAT 😊");
-    break;
-  case "burger":
-  case "pizza":
-  case "fanta":
-    alert("Makanan / minuman ini TIDAK SEHAT");
-    break;
-  default:
-    alert("Inputan anda SALAH!");
-    break;
-}
+// switch (item) {
+//   case "nasi":
+//   case "susu":
+//   case "daging":
+//     alert("Makanan / minuman ini SEHAT 😊");
+//     break;
+//   case "burger":
+//   case "pizza":
+//   case "fanta":
+//     alert("Makanan / minuman ini TIDAK SEHAT");
+//     break;
+//   default:
+//     alert("Inputan anda SALAH!");
+//     break;
+// }
+
+// ============== FOR Bercabang =======
+// contoh 1 | bintang segitiga kebawah
+// let c = "";
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     c += "*"; // tampil bintang + satu bintang (baru)
+//   }
+//   c += "\n"; //spasi ke bawah setiap perulangan bintang terpenuhi
+// }
+// console.log(c);
+
+// contoh 2 | bintang segitiga keatas
+// let c = "";
+// for (let i = 5; i > 0; i--) {
+//   for (let j = 0; j < i; j++) {
+//     c += "*";
+//   }
+//   c += "\n";
+// }
+// console.log(c);
