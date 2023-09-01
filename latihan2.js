@@ -91,9 +91,9 @@
 // console.log(a); // a=1 karena yang tampil adalah variable global
 
 // contoh function scope 3
-let a = 1;
-function tes(a) {
-  console.log(a);
-}
-tes(2); // output : 2 | parameter 2 akan masuk ke variable local function tes(a) kemudian menampilkan console dari (a)
-console.log(a); // output : 1 | menampilkan isi dari variable global a = 1
+// let a = 1;
+// function tes(a) {
+//   console.log(a);
+// }
+// tes(2); // output : 2 | parameter 2 akan masuk ke variable local function tes(a) kemudian menampilkan console dari (a)
+// console.log(a); // output : 1 | menampilkan isi dari variable global a = 1
