@@ -1,4 +1,5 @@
-let passenger = ["Adhitya", undefined, "Hasan"];
+// let passenger = ["Adhitya", undefined, "Hasan"];
+let passenger = [];
 
 let addPassenger = (namePassenger, passenger) => {
   if (passenger.length == 0) {
@@ -28,4 +29,19 @@ let addPassenger = (namePassenger, passenger) => {
       }
     }
   }
+};
+
+let deletePassenger = (namePassenger, passenger) => {
+  if (passenger.length == 0) {
+    console.log("Car Transport is empty.");
+  } else {
+    for (let i = 0; i < passenger.length; i++) {
+      if (passenger[i] == namePassenger) {
+        passenger[i] = undefined;
+      } else if (i == passenger.length - 1) {
+        console.log(`${namePassenger} is not in the car transport`);
+      }
+    }
+  }
+  return passenger;
 };
