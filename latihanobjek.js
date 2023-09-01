@@ -29,57 +29,84 @@
 
 // ====================================================================
 // membuat Object Literal
-let mhs1 = {
-  nama: "Adhitya Hasan",
-  npm: "2024240088",
-  email: "adhityahasan011@gmail.com",
-  jurusan: "Sistem Informasi",
-};
+// let mhs1 = {
+//   nama: "Adhitya Hasan",
+//   npm: "2024240088",
+//   email: "adhityahasan011@gmail.com",
+//   jurusan: "Sistem Informasi",
+// };
 
-let mhs2 = {
-  nama: "Ferguso",
-  npm: "2024240069",
-  email: "ferguso69@gmail.com",
-  jurusan: "AI Mastering",
-};
+// let mhs2 = {
+//   nama: "Ferguso",
+//   npm: "2024240069",
+//   email: "ferguso69@gmail.com",
+//   jurusan: "AI Mastering",
+// };
 
-// Membuat object dengan function
-const buatObject = (nama, npm, email, jurusan) => {
-  let mhs = {};
-  mhs.nama = nama;
-  mhs.npm = npm;
-  mhs.email = email;
-  mhs.jurusan = jurusan;
-  return mhs;
-};
-let mhs3 = buatObject(
-  "Zuck",
-  "20242400",
-  "zucklovelon@gmail.com",
-  "Informatic Robot"
-);
-let mhs4 = buatObject(
-  "Elon Musk",
-  "20242499",
-  "elonlovezuk@gmail.com",
-  "Petani"
-);
+// // Membuat object dengan function
+// const buatObject = (nama, npm, email, jurusan) => {
+//   let mhs = {};
+//   mhs.nama = nama;
+//   mhs.npm = npm;
+//   mhs.email = email;
+//   mhs.jurusan = jurusan;
+//   return mhs;
+// };
+// let mhs3 = buatObject(
+//   "Zuck",
+//   "20242400",
+//   "zucklovelon@gmail.com",
+//   "Informatic Robot"
+// );
+// let mhs4 = buatObject(
+//   "Elon Musk",
+//   "20242499",
+//   "elonlovezuk@gmail.com",
+//   "Petani"
+// );
 
-// Membuat object dengan Constructor | function khusus membuat object
-function Mahasiswa(nama, npm, email, jurusan) {
-  // let this {}
-  this.nama = nama;
-  this.npm = npm;
-  this.email = email;
-  this.jurusan = jurusan;
-  // return this;
+// // Membuat object dengan Constructor | function khusus membuat object
+// function Mahasiswa(nama, npm, email, jurusan) {
+//   // let this {}
+//   this.nama = nama;
+//   this.npm = npm;
+//   this.email = email;
+//   this.jurusan = jurusan;
+//   // return this;
+// }
+
+// let mhs5 = new Mahasiswa(
+//   "Jeff Bezos",
+//   "20242401",
+//   "jefhatezuckelon@gmail.com",
+//   "Fashion balita"
+// );
+
+// console.log(mhs5);
+
+// ++++++++++++++++++++++++ Object THIS ++++++++++++++++++++++++
+
+// cara 1 - function declaration
+// function halo() {
+//   console.log(this);
+//   console.log(halo);
+// }
+// this.halo();
+// dengan function declaration : this mengembalikan object GLobal
+
+// Cara 2 - Object Literal
+let obj = { a: 10, nama: "San" };
+obj.halo = () => {
+  console.log(this);
+  console.log("halo");
+};
+obj.halo();
+// dengan Object Literal : this mengembalikan Object yang bersangkutan
+
+// Cara 3 - Constructor
+function Halo() {
+  console.log(this);
+  console.log("halo");
 }
-
-let mhs5 = new Mahasiswa(
-  "Jeff Bezos",
-  "20242401",
-  "jefhatezuckelon@gmail.com",
-  "Fashion balita"
-);
-
-console.log(mhs5);
+new Halo();
+// dengan Cosntructor : this mengembalikan Object yang baru dibuat
