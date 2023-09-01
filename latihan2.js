@@ -97,3 +97,28 @@
 // }
 // tes(2); // output : 2 | parameter 2 akan masuk ke variable local function tes(a) kemudian menampilkan console dari (a)
 // console.log(a); // output : 1 | menampilkan isi dari variable global a = 1
+
+// ++++++++++++++++++++++++++++ Recursif ++++++++++++++++++++++++++++
+// fungsi yang memanggil dirinya sendiri
+
+// contoh menggunakan looping
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// contoh menggunakan recursif
+// function tampilAngka(n) {
+//   if (n === 0) {
+//     return;
+//   }
+//   console.log(n);
+//   return tampilAngka(n - 1);
+// }
+// tampilAngka(10);
+
+// contoh rekursif (2) | mencari nilai faktorial
+// function faktorial(n) {
+//   if (n === 0) return 1;
+//   return n * faktorial(n - 1);
+// }
+// console.log(faktorial(5)); //120
