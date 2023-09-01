@@ -49,13 +49,21 @@
 // console.log(hasil);
 
 // ++++++++++++++++++ funtion array arguments ++++++++++++++++++
-function tambah() {
-  let hasil = 0;
-  for (let i = 0; i < arguments.length; i++) {
-    hasil += arguments[i]; //statement hasil
-  }
-  return hasil;
-}
-// let coba = tambah(5, 10, "san", false);
-let coba = tambah(5, 10, 100);
-console.log(coba);
+// function tambah() {
+//   let hasil = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     hasil += arguments[i]; //statement hasil
+//   }
+//   return hasil;
+// }
+// // let coba = tambah(5, 10, "san", false);
+// let coba = tambah(5, 10, 100);
+// console.log(coba);
+
+// ++++++++++++++++++ Refactoring Code ++++++++++++++++++
+
+// contoh refactoring menghitung 2 volume kubus
+// function jumlahVolumeDuaKubus(a, b) {
+//   return a * a * a + b * b * b;
+// }
+// alert(jumlahVolumeDuaKubus(8, 3));
