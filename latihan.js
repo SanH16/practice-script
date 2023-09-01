@@ -180,3 +180,5 @@
 // } else {
 //   console.log("(" + num + ") is not an Number");
 // }
+
+// ======= Switch =======

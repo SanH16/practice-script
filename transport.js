@@ -38,8 +38,8 @@
 // }
 
 // Case 4 | For + if + else if
-// let jumlah = prompt("Input a number of Transport :");
-// let aktif = prompt("Input a number Operation Transport (Active) :");
+// let jumlah = parseInt(prompt("Input a number of Transport :"));
+// let aktif = parseInt(prompt("Input a number Operation Transport (Active) :"));
 // for (let num = 1; num <= jumlah; num++) {
 //   if (num <= aktif) {
 //     console.log("Kendaraan No. " + num + " beroperasi dengan baik.");
@@ -51,8 +51,8 @@
 // }
 
 // Case 5 | Kendaraan 8 & 10 Lembur
-// let jumlah = prompt("Input a number of Transport :");
-// let aktif = prompt("Input a number Operation Transport (Active) :");
+// let jumlah = parseInt(prompt("Input a number of Transport :"));
+// let aktif = parseInt(prompt("Input a number Operation Transport (Active) :"));
 // for (let num = 1; num <= jumlah; num++) {
 //   if (num <= aktif) {
 //     console.log("Kendaraan No. " + num + " beroperasi dengan baik.");
@@ -64,8 +64,8 @@
 // }
 
 // Case 6 | Kendaran 5, 8, 10 Lembur
-let jumlah = prompt("Input a number of Transport :");
-let aktif = prompt("Input a number Operation Transport (Active) :");
+let jumlah = parseInt(prompt("Input a number of Transport :"));
+let aktif = parseInt(prompt("Input a number Operation Transport (Active) :"));
 for (let num = 1; num <= jumlah; num++) {
   if (num <= aktif && num !== 5) {
     console.log("Kendaraan No. " + num + " beroperasi dengan baik.");
