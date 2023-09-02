@@ -6,6 +6,7 @@ const judul = document.getElementById("judul");
 judul.style.color = "red";
 judul.style.backgroundColor = "#444";
 judul.textContent = "Adhitya Hasan";
+judul.setAttribute("name", "san");
 
 // getElementByTagName()
 // -> Mengembalikan HTMLCollection
@@ -41,3 +42,10 @@ for (let i = 0; i < p.length; i++) {
 const sectionB = document.getElementById("b");
 const prgf4 = sectionB.querySelector("p");
 prgf4.textContent = "ubah aja";
+
+// const sectionA = document.querySelector("section#a");
+// sectionA.innerHTML = "Heyowezup";
+
+// ====================================================
+const link = document.querySelector("section#a a");
+link.setAttribute("id", "link");
