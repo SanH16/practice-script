@@ -28,5 +28,39 @@ function Transportation(sopir, ways, passenger, cash) {
   };
 }
 
-let trans1 = new Transportation("San", ["Palembang", "Papua"], [], 0);
-let trans2 = new Transportation("Hulk", ["Bumi", "Bulan"], [], 0);
+const trans1 = new Transportation(
+  "San",
+  ["Palembang", "Papua"].join(" - "),
+  [],
+  0
+);
+const trans2 = new Transportation("Hulk", ["Bumi", "Bulan"], [], 0);
+trans1.passengerGoUp(["Adhitya Hasan", "San Tech", "Jokowi"].join(", "));
+// trans1.passengerGoDown("Jokowi", 2000);
+
+document.getElementById("c1").textContent = `Sopir : ${trans1.sopir}`;
+document.getElementById("c2").textContent = `Track : ${trans1.ways}`;
+document.getElementById("c3").textContent = `Penumpang : ${trans1.passenger}`;
+document.getElementById("c4").textContent = `Bayar : ${trans1.cash}`;
+
+const deletion = document.getElementById("deletion");
+const addion = document.getElementById("addion");
+const formSearch = document.getElementById("formSearch");
+formSearch.addEventListener("submit", (e) => {
+  e.preventDefault;
+
+  fGet();
+});
+
+const fGet = () => {
+  trans1.passengerGoDown("Jokowi", 2000);
+  alert("remove berhasil");
+};
+
+// addion.addEventListener("click", () => {
+//   fTes;
+// });
+const fTes = () => {
+  trans1.passengerGoUp("Uye");
+  alert("add berhasil");
+};
