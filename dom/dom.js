@@ -3,8 +3,8 @@
 // getElementById()
 // -> Mengembalikan 1 Element
 const judul = document.getElementById("judul");
-judul.style.color = "red";
-judul.style.backgroundColor = "#444";
+judul.style.color = "purple";
+judul.style.backgroundColor = "pink";
 judul.textContent = "Adhitya Hasan";
 judul.setAttribute("name", "san");
 
@@ -35,9 +35,10 @@ list2.style.backgroundColor = "pink";
 // querySelectorAll()
 const p = document.querySelectorAll("p");
 for (let i = 0; i < p.length; i++) {
-  p[i].style.backgroundColor = "lightblue";
+  p[i].style.backgroundColor = "lightblue"; //quetySelectorAll harus menggunakan index
 }
 
+// mengubah node root
 // ====================================================
 const sectionB = document.getElementById("b");
 const prgf4 = sectionB.querySelector("p");
@@ -46,6 +47,11 @@ prgf4.textContent = "ubah aja";
 // const sectionA = document.querySelector("section#a");
 // sectionA.innerHTML = "Heyowezup";
 
-// ====================================================
+// =================== DOM Manipulation ===================
+// const sectionA = document.querySelector("section#a");
+// sectionA.innerHTML = "Hello World"; //mengganti semua isi yang ada di section#a
 const link = document.querySelector("section#a a");
 link.setAttribute("id", "link");
+link.getAttribute("href");
+link.getAttribute("id");
+// link.removeAttribute("href"); //remove attribute
