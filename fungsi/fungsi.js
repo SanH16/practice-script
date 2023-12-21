@@ -10,4 +10,4 @@ const creates = () => {
   return value;
 };
 
-console.log("Fungsi", creates());
+console.log("Call function", creates());
