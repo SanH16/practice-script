@@ -11,3 +11,15 @@ const creates = () => {
 };
 
 console.log("Call function", creates());
+
+// callback function
+
+function user(name, greeting, callback) {
+  return callback(name, greeting);
+}
+
+const result = user("San", "Hai", function (name, greeting) {
+  return greeting + " " + name;
+});
+
+console.log(result);
