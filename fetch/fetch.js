@@ -10,7 +10,7 @@ const hitApi = async () => {
   const result = await fetch(endpoint);
   const { data } = await result.json();
 
-  console.log(data);
+  console.log(`fetch data result : ${data}`);
 
   data.forEach((user) => {
     const fetchElement = document.createElement("div");
