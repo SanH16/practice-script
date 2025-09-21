@@ -1,17 +1,28 @@
 // ======= For If | Fizz Buzz =======
 
-for (let i = 0; i <= 30; i++) {
-  if (i % 15 == 0) {
-    console.log("Fizz Buzz");
-  } else if (i % 3 == 0) {
-    console.log("Fizz");
-  } else if (i % 5 == 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
-}
+// for (let i = 0; i <= 30; i++) {
+//   if (i % 15 == 0) {
+//     console.log("Fizz Buzz");
+//   } else if (i % 3 == 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 == 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
 
+// for (let i = 0; i <= 30; i++) {
+//   if (i % 15 == 0) {
+//     console.log("Fizz Buzz");
+//   } else if (i % 3 == 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 == 0) {
+//     console.log(" Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
 // ======= While If | Fizz Buzz =======
 
 // deklarasi angka dulu
@@ -28,6 +39,21 @@ while (num <= 30) {
     console.log(num);
   }
   num++; // incerement : num = num + 1;
+}
+
+let numb = 1;
+
+while (numb <= 30) {
+  if (numb % 3 == 0) {
+    console.log(`My (${numb})`);
+  } else if (numb % 5 == 0) {
+    console.log(`Name (${numb})`);
+  } else if (numb % 15 == 0) {
+    console.log(`My Name (${numb})`);
+  } else {
+    console.log(numb);
+  }
+  numb++;
 }
 
 // ======= Ganjil genap =======

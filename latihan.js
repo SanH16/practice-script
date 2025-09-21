@@ -14,30 +14,32 @@
 // }
 
 // ======= operator penggabungan string =======
-// let a = "apple";
-// let b = "pen";
-// console.log(a + " " + b);
+let a = "apple";
+let b = "pen";
+console.log(a + " " + b);
 
 // ======= penjumlahan number dengan string =======
-// console.log(10 + 10 + "100"); //20100 (number + number + string = number & string)
-// console.log("10" + 10 + 10); //101010 (string + number + number = string)
+console.log(10 + 10 + "100"); //20100 (number + number + string = number & string)
+console.log("10" + 10 + 10); //101010 (string + number + number = string)
 
 // ======= typeof | cek tipe data =======
-// console.log(typeof 10);
-// console.log(typeof "10");
-// console.log(typeof true);
+console.log(typeof 10);
+console.log(typeof "10");
+console.log(typeof true);
 
 // ======= operator ternary =======
-// (kondisi) ? "benar" : "salah"
-// (x % 2 == 0) ? "genap" : "ganjil"
+// kondisi ? "benar" : "salah";
+let x = 6;
+// x % 2 == 0 ? "genap" : "ganjil";
+console.log(x % 2 == 0 ? "genap" : "ganjil");
 
 // ======= penggunaan kutip string =======
 // console.log('"Gerakan Mahasiswa" dilakukan pada hari Senin'); //masih benar
 //  // console.log('"Gerakan Mahasiswa" dilakukan pada hari jum'at '); //tidak jalan error
-// console.log('"Gerakan Mahasiswa" dilakukan pada hari jum\'at '); //tambahkan backslash sebelum kutip | true
-// console.log("satu \n backslash n");
-// console.log("dua \n\n dua backslash n");
-// console.log("coba backslash \t tab");
+console.log('"Gerakan Mahasiswa" dilakukan pada hari jum\'at '); //tambahkan backslash sebelum kutip | true
+console.log("satu \n backslash n");
+console.log("dua \n\n dua backslash n");
+console.log("coba backslash \t tab");
 
 // ======= unicode =======
 // console.log("\u00A9"); //copyright
